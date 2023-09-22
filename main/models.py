@@ -1,0 +1,34 @@
+from django.db import models
+
+# Create your models here.
+
+class Product(models.Model):
+    first_product_image_link = models.CharField(max_length=500)
+    first_product_name = models.CharField(max_length=100)
+    first_product_text = models.CharField(max_length=500)
+    first_product_description = models.CharField(max_length=500)
+    first_product_previous_price = models.FloatField()
+    first_product_current_price = models.FloatField()
+    first_product_link = models.CharField(max_length=5000)
+
+    # Second Product
+    second_product_image_link = models.CharField(max_length=500)
+    second_product_name = models.CharField(max_length=100)
+    second_product_text = models.CharField(max_length=500)
+    second_product_description = models.CharField(max_length=500)
+    second_product_previous_price = models.FloatField()
+    second_product_current_price = models.FloatField()
+    second_product_link = models.CharField(max_length=5000)
+
+    # Third Product
+    third_product_image_link = models.CharField(max_length=500)
+    third_product_name = models.CharField(max_length=100)
+    third_product_text = models.CharField(max_length=500)
+    third_product_description = models.CharField(max_length=500)
+    third_product_previous_price = models.FloatField()
+    third_product_current_price = models.FloatField()
+    third_product_link = models.CharField(max_length=5000)
+
+
+    def __str__(self):
+        return self.first_product_name + ' | ' + self.second_product_name + ' | ' + self.third_product_name

@@ -12,22 +12,22 @@ class Product(models.Model):
     first_product_link = models.CharField(max_length=5000)
 
     # Second Product
-    second_product_image_link = models.CharField(max_length=500)
-    second_product_name = models.CharField(max_length=100)
-    second_product_text = models.CharField(max_length=500)
-    second_product_description = models.CharField(max_length=500)
-    second_product_previous_price = models.FloatField()
-    second_product_current_price = models.FloatField()
-    second_product_link = models.CharField(max_length=5000)
+    second_product_image_link = models.CharField(max_length=500, blank=True)
+    second_product_name = models.CharField(max_length=100, blank=True)
+    second_product_text = models.CharField(max_length=500, blank=True)
+    second_product_description = models.CharField(max_length=500, blank=True)
+    second_product_previous_price = models.FloatField(blank=True)
+    second_product_current_price = models.FloatField(blank=True)
+    second_product_link = models.CharField(max_length=5000, blank=True)
 
     # Third Product
-    third_product_image_link = models.CharField(max_length=500)
-    third_product_name = models.CharField(max_length=100)
-    third_product_text = models.CharField(max_length=500)
-    third_product_description = models.CharField(max_length=500)
-    third_product_previous_price = models.FloatField()
-    third_product_current_price = models.FloatField()
-    third_product_link = models.CharField(max_length=5000)
+    third_product_image_link = models.CharField(max_length=500, blank=True)
+    third_product_name = models.CharField(max_length=100, blank=True)
+    third_product_text = models.CharField(max_length=500, blank=True)
+    third_product_description = models.CharField(max_length=500, blank=True)
+    third_product_previous_price = models.FloatField(blank=True)
+    third_product_current_price = models.FloatField(blank=True)
+    third_product_link = models.CharField(max_length=5000, blank=True)
 
 
     def __str__(self):
